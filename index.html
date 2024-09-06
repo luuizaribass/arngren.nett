@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arngreen</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link class="icon" rel="icon" href="assets/logoImg.png">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="assets/logoOficial.png" alt="Logo">
+        </div>
+        <div class="barraPesquisa">
+            <input type="text" placeholder="Pesquisar...">
+            <button><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></button>
+        </div>
+        <div class="iconesNav">
+            <select id="trocaIdioma">
+                <option value="pt">Português</option>
+                <option value="en">English</option>
+                <option value="es">Español</option>
+                <option value="no">Norsk</option>
+            </select>
+            <i class="fa-solid fa-heart" style="color: #006735;"></i>
+            <i class="fa-solid fa-bag-shopping" style="color: #006735;"></i>
+        </div>
+    </nav>
+
+    <!-- Carrossel de Imagens -->
+    <div class="carrossel">
+        <div class="imgCarrossel">
+            <img src="assets/banner1.png" alt="Imagem 1">
+            <img src="assets/banner2.png" alt="Imagem 2">
+            <img src="assets/banner3.png" alt="Imagem 3">
+        </div>
+        <div class="indicadoresCarrossel">
+            <span class="ponto"></span>
+            <span class="ponto"></span>
+            <span class="ponto"></span>
+        </div>
+    </div>
+
+    <h1 id="titulo">Principais Categorias</h1>
+
+    <!-- Seção de Categorias -->
+    <section class="categorias">
+        <div class="caixaCategoria">
+            <i class="fas fa-car"></i>
+            <h3>Automóveis</h3>
+        </div>
+        <div class="caixaCategoria">
+            <i class="fas fa-puzzle-piece"></i>
+            <h3>Brinquedos</h3>
+        </div>
+        <div class="caixaCategoria">
+            <i class="fas fa-tv"></i>
+            <h3>Eletrônicos</h3>
+        </div>
+    </section>
+
+    <!-- Seção de Lançamentos -->
+    <h2 id="titulo">Lançamentos</h2>
+    <section class="lancamentos">
+        <div class="caixaLancamento">
+            <img class="carroImg" src="assets/produto1.png" alt="Produto 1">
+            <h3>Produto 1</h3>
+            <p>R$ 199,90</p>
+            <div class="estrelas">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <button>Saiba Mais</button>
+        </div>
+        <div class="caixaLancamento">
+            <img class="droneImg" src="assets/produto2.png" alt="Produto 2">
+            <h3>Produto 2</h3>
+            <p>R$ 299,90</p>
+            <div class="estrelas">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <button>Saiba Mais</button>
+        </div>
+        <div class="caixaLancamento">
+            <img class="toyImg" src="assets/produto3.png" alt="Produto 3">
+            <h3>Produto 3</h3>
+            <p>R$ 399,90</p>
+            <div class="estrelas">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <button>Saiba Mais</button>
+        </div>
+        <div class="caixaLancamento">
+            <img class="bikeImg" src="assets/produto4.png" alt="Produto 4">
+            <h3>Produto 4</h3>
+            <p>R$ 499,90</p>
+            <div class="estrelas">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <button>Saiba Mais</button>
+        </div>
+    </section>
+
+    <div class="painel">
+        <img src="assets/painel.png" alt="Imagem do Painel">
+    </div>
+
+    <!-- Formulário de Revenda -->
+    <section class="formRevenda">
+        <h2>Revenda Seus Itens</h2>
+        <p>Contate-nos e revenda seus produtos eletrônicos também. Preeencha o formulário a seguir:</p>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome">
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Seu email">
+            
+            <label for="descricao">Descrição do Item:</label>
+            <textarea id="descricao" name="descricao" placeholder="Descreva o item que deseja revender"></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <section class="infoBoxes">
+        <div class="infoBox">
+            <i class="fa-solid fa-truck"></i>
+            <h3>Frete grátis</h3>
+            <p>Para todo o Brasil</p>
+        </div>
+        <div class="infoBox">
+            <i class="fa-solid fa-credit-card"></i>
+            <h3>Parcele sua compra</h3>
+            <p>Em até 2x</p>
+        </div>
+        <div class="infoBox">
+            <i class="fa-solid fa-shield-alt"></i>
+            <h3>Compra segura</h3>
+            <p>Seus dados protegidos</p>
+        </div>
+        <div class="infoBox">
+            <i class="fa-solid fa-map-marker-alt"></i>
+            <h3>Pedido monitorado</h3>
+            <p>Código de rastreamento</p>
+        </div>
+    </section>
+
+
+    <section class="infoDetalhes">
+        <div class="containerInfo">
+            <div class="infoAtendimento">
+                <h3>Atendimento</h3>
+                <p><strong>Horário de funcionamento</strong><br>
+                Segunda a sexta: 8:00 às 23:00h</p>
+                <p>📞 (+47) -22149166</p>
+                <p>📱 (+47) -92060873</p>
+            </div>
+            <div class="infoInstitucional">
+                <h3>Institucional</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Quem somos</a></li>
+                    <li><a href="#">Revenda</a></li>
+                    <li><a href="#">Produtos</a></li>
+                </ul>
+            </div>
+            <div class="infoAjuda">
+                <h3>Ajuda</h3>
+                <ul>
+                    <li><a href="#">Políticas de devolução e trocas</a></li>
+                    <li><a href="#">Políticas de privacidade</a></li>
+                    <li><a href="#">Fale Conosco</a></li>
+                    <li><a href="#">Entregas e prazos</a></li>
+                </ul>
+            </div>
+            <div class="infoPedidos">
+                <h3>Meus Pedidos</h3>
+                <ul>
+                    <li><a href="#">Acompanhe seus pedidos</a></li>
+                    <li><a href="#">Editar cadastro</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Arngreen - Todos os direitos reservados.</p>
+        <div class="social-icons">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <!-- ACESSIBILIDADE A LIBRAS -->
+    <div vw class="ativado">
+        <div vwAccessButton class="ativo"></div>
+        <div vwPluginWrapper>
+            <div class="topoPlugin"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    <!-- FIM ACESSIBILIDADE A LIBRAS -->
+</body>
+
+</html>

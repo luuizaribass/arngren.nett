@@ -1,0 +1,455 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+/* Estilo do corpo */
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navegação */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+}
+
+.barraPesquisa {
+    display: flex;
+    align-items: center;
+}
+
+.barraPesquisa input[type="text"] {
+    padding: 7px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+.barraPesquisa button {
+    padding: 7px 10px;
+    background-color: #006735;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.barraPesquisa button:hover {
+    background-color: #172929;
+}
+
+.iconesNav {
+    display: flex;
+    gap: 15px;
+}
+
+.iconesNav i {
+    font-size: 24px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.iconesNav i:hover {
+    opacity: 0.8;
+}
+
+/* Título e Conteúdo */
+#titulo {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 30px;
+    color: #005555;
+}
+
+/* Seletor de Idioma */
+#trocaIdioma {
+    display: block;
+    margin: 0 auto;
+    padding: 5px;
+    font-size: 12px;
+    border: 1px solid #005555;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+#trocaIdioma:hover {
+    border-color: #008080;
+}
+
+/* Estilos do Carrossel */
+.carrossel {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.imgCarrossel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.imgCarrossel img {
+    width: 100%;
+    height: auto;
+}
+
+.indicadoresCarrossel {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.indicadoresCarrossel .ponto {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.indicadoresCarrossel .ponto.ativo {
+    background-color: #717171;
+}
+
+/* Estilos de Categorias */
+.categorias {
+    display: flex;
+    justify-content: space-between; /* Espaçamento igual entre os itens */
+    margin: 40px auto;
+    max-width: 1200px; /* Define uma largura máxima */
+    padding: 60px;
+}
+
+.caixaCategoria {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(25% - 20px); /* Tamanho proporcional com espaçamento igual */
+    margin: 0px;
+    
+    border: 2px solid transparent;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.caixaCategoria:hover {
+    background-color: #00673546; /* Cor de fundo ao passar o mouse */
+    color: #006735; /* Cor do texto ao passar o mouse */
+    border-color: #006735; /* Cor da borda ao passar o mouse */
+    transform: scale(1.05); /* Efeito de aumento no hover */
+}
+
+.caixaCategoria i {
+    font-size: 40px;
+    color: #006735;
+    margin-bottom: 10px;
+}
+
+.caixaCategoria h3 {
+    font-size: 18px;
+    margin: 0;
+}
+
+/* Estilos de Lançamentos */
+.lancamentos {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.caixaLancamento {
+    width: 20%;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+}
+
+.caixaLancamento img {
+    width: 100%;
+    height: auto;
+}
+
+.carroImg {
+    margin-bottom: 80px;
+    margin-top: 25px;
+}
+
+.droneImg {
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+
+.toyImg {
+    margin-bottom: 40px;
+}
+
+.estrelas i {
+    color: #FFD700;
+}
+
+button {
+    background-color: #006735;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #005222;
+}
+
+.painel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px auto;
+    max-width: 1200px; 
+    padding: 60px;
+}
+
+.painel img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+/* Formulário de Revenda */
+.formRevenda {
+    background-color: #ffffff;
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 60px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.formRevenda h2 {
+    text-align: center;
+    color: #005555;
+    margin-bottom: 15px;
+}
+
+.formRevenda label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.formRevenda input, 
+.formRevenda textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.formRevenda button {
+    display: block; /* Torna o botão um bloco para facilitar a centralização */
+    margin: 20px auto 0 auto; /* Centraliza o botão horizontalmente */
+    padding: 10px 20px;
+    background-color: #006735;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.formRevenda button:hover {
+    background-color: #005222;
+}
+
+.formRevenda p{
+    text-align: center;
+}
+
+/* Estilo das caixas de informação */
+
+.infoAtendimento,
+.infoInstitucional,
+.infoAjuda,
+.infoPedidos{
+    padding: 0px 55px;
+}
+.infoBoxes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    gap: 20px;
+}
+
+.infoBox {
+    background-color: #4a7f42; /* Cor de fundo similar à da imagem */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    width: 500px;
+    height: 170px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.infoBox i {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.infoBox h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.infoBox p {
+    font-size: 14px;
+}
+
+
+.infoDetalhes {
+    display: flex;
+    justify-content: center;
+    background-color: #f4f4f4;
+    padding: 40px 0;
+    color: #333;
+}
+
+.containerInfo {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.containerInfo div {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.infoDetalhes h3 {
+    font-size: 18px;
+    color: #005555;
+    margin-bottom: 10px;
+}
+
+.infoDetalhes p,
+.infoDetalhes ul {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.infoDetalhes ul {
+    list-style: none;
+    padding: 0;
+}
+
+.infoDetalhes ul li {
+    margin-bottom: 10px;
+}
+
+.infoDetalhes ul li a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.infoDetalhes ul li a:hover {
+    color: #006735;
+}
+
+
+/* Seções ajustadas */
+.categorias,
+.formRevenda,
+.infoBoxes {
+    padding: 60px;
+}
+
+.lancamentos {
+    padding: 50px 200px 50px 200px;
+}
+
+
+/* Footer */
+footer {
+    background-color: #006735;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .barraPesquisa {
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .barraPesquisa input[type="text"] {
+        width: 80%;
+    }
+
+    .iconesNav {
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .categorias, .lancamentos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .caixaCategoria, .caixaLancamento {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
